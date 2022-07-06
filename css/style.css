@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* ----utility classes ---- */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family:'Montserrat', sans-serif ;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none ;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 00.15em;
+    font-weight: 500;
+    color: red;
+}
+
+/* ----utility classes ---- */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.lg-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+.btn{
+  display: inline-block;
+  padding: 00.5em 1.5em; 
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0; 
+  
+
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em; 
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border:  2px solid red;
+    border-radius: 1.5em;
+    color: red;
+    background: #fff;
+    margin-left: 3rem;
+    
+}
+
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+/* ----------header styling ------------ */
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('../images/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+  .navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+
+.navbar .nav-items{
+    float: right;
+}
+
+.header .navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+   color: #f4f4f4;
+
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*############## header content styling #############*/ 
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:linear-gradient(rgba(0,0,0,0.2) rgba(0,0,0,0.2)) ;
+
+}
+
+.lg-heading{
+    color: #fff;
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content{
+     text-transform: uppercase;
+}
+
+/* ############  Showcase section styling ######### */
+.showcase{
+    background: #ddd ;
+    padding:  10rem 0;
+    
+}
+
+.row{
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+    
+}
+.row{
+    margin-bottom: 10rem;   
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box, .row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+ height: 100%;
+}
+
+.row .text-box{
+     padding: 3rem;
+
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.box-wrapper{
+    margin: 20rem 1rem 20rem 1rem;
+}
+
+/* ############ FEATURES SECTION STYLING ############ */
+
+
+.features{
+    padding: 10rme 0;
+}
+
+h2, li{
+   
+    color: #fff;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px #000;
+}
+
+.box{
+   width: 33.33%;
+   float: left;
+   border: 2px solid black;
+   padding: 2rem;
+   text-align: center;
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2{
+    background-color: rgb(220, 75, 75);
+    color: #fff;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ######## Socil media########### */
+
+.footer{
+    text-align: center;
+    background: #263238;
+    color: #fff;
+    padding: 2rem;
+}
+
+.social-media-links i{
+   margin: 2rem;
+}
+
+.box-wrapper2{
+    box-shadow: 0px 0px 10px 2px #000;
+}
+
+/*    ABOUT PAGE STYLING       */
+
+
+.about{
+    padding: 5rem 0;
+    
+}
+.about-heading{
+    color: #000;
+    border-bottom: 4px solid #e63946; 
+}
+
+.about-heading{
+    color: #000;
+}
+/* .about-heading::after{
+    content:'';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+} */
+
+
+/* About Wrapper Styling  */
+
+li{
+    color: #555;
+}
+
+.about-wrapper{q
+    margin-top: 2rem;
+    /* text:al */
+    /* text-align: center; */
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%; 
+}
+
+.about-wrapper::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+/* ###############        ################### */
+
+
+.counts{
+    margin-top: 3rem;
+    margin-left: 17rem;
+     /* border: 6px solid black;    */
+}
+
+.count-item{
+    float: left;
+    width: 20%;
+   
+    text-align: center;
+}
+
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+.count-item spam{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #e63946;  
+}
+
+.count-item p{
+    font-weight: 700;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+
+/* ###########          ########### */
+
+.cta-banner{
+    background-color: rgb(218, 66, 66);
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top: 4rem;
+    padding: 1rem;
+    color: #f4f4f4f4;
+   }
+
+.cta-banner-rigth{
+    width: 40%;
+    float: right; 
+    text-align: right;    
+}
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    width: 60%;
+    margin-top: 2rem;
+    text-align: center;
+    float: left;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1rem 12rem 1rem 0rem;
+    text-transform: uppercase;
+    border: 4px solid #fff ;
+    padding: .7rem 4rem .7rem 4rem ;
+    letter-spacing: 0.4rem;
+    color: #fff;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+} 
+
